@@ -1,0 +1,163 @@
+/* Шрифты */
+
+@font-face {
+  font-family: "Summer Bold";
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/Summer%20Font%20Bold.woff);
+}
+
+@font-face {
+  font-family: "Summer";
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/Summer%20Font%20Regular.woff);
+}
+
+
+
+/* Элементы */
+body {
+  font: 28px/1.2 "Summer Bold";
+  margin: 0 50px;
+  background-image: url(https://cdna.artstation.com/p/assets/images/images/001/153/478/large/phillip-neyman-spitpaint320-2-2.jpg?1441145013);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size:cover;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.mb-3{
+  font: 60px/1.2 "Summer Bold";
+  text-align: center;
+}
+.my-3{
+  font: 35px/1.2 "Summer Bold";
+  text-align: center;
+}
+.app {
+  background-color: rgba(209, 223, 227, 1);
+  width: 1000px;
+  height: 700px;
+  border: 5px solid rgba(232, 142, 185, 1);
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: scroll;
+
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+
+
+
+
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(232, 142, 185, 1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: rgba(232, 142, 185, 1);
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.modal{
+  background-color: rgba(171, 206, 161, 0.35);
+  font: 40px/1.2 "Summer Bold";
+}
+
+.modal-title{
+  font: 40px/1.2 "Summer Bold";
+
+}
+.btn-primary, .btn-secondary{
+  font: 30px/1.2 "Summer Bold";
+}
+.modal-body {
+  background-color: rgba(184, 208, 214, 1);
+  font: 35px/1.2 "Summer Bold";
+}
+.form-control{
+  font: 28px/1.2 "Summer Bold";
+}
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+#tasks div {
+  border: 3px solid #abcea1;
+  background-color: rgba(171, 206, 161, 0.35);
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
+
+.fig {
+  border: 80px solid rgba(209, 223, 227, 1);
+  text-align: center;
+}
+
+
+
+
+
+/*--адаптируем под разные дисплеи*/
+/* For mobile phones: */
+@media screen and (min-width:768px) {
+
+  .app {
+    width: 100%;
+    flex-basis: 100%;
+
+  }
+
+}
+
+  /* For tablets: */
+  @media screen and (min-width: 992px) {
+    .app{
+      width:980px;
+      flex-basis:980px;
+    }
+  }
+  /* For display: */
+  @media screen and (min-width:1200px) {
+    .app{
+      width:1000px;
+    }
+
+  }
+
