@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="хмм.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="left">
+
+    <form id="form" class="formbody">
+    <label for="post" class="mb-3"> Редактирование заказа</label>
+      <p>Клиент</p>
+      <input type="text" class="form-control" name="" id="textInput1" autofocus placeholder="Введи имя клиента" required>
+      <div id="msg"></div>
+
+      <p>Контакт</p>
+      <input type="text" class="form-control" name="" id="textInput2" autofocus placeholder="Введи контактные данные" required>
+
+      <p>Дата сдачи</p>
+      <input type="date" class="form-control" name="" id="dateInput" >
+
+      <p>Детали заказа</p>
+      <textarea name="" class="form-control" id="textarea" cols="30" rows="3"></textarea>
+    <br> <br>
+
+    <button type="submit" class="btn btn-primary">Готово</button>
+      <br> <br>
+  </form>
+
+  </div>
+
+
+  <div class="right">
+  
+    <h3>Заказы</h3>
+    <div id="posts">
+    </div>
+    <p class="fig"><img src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/2da87f1e7589f2d.png" alt="rabbit" width="110px" height="72px"></p>
+  </div>
+  
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+
+<script src="хмм.js"></script>
+</html>
